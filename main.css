@@ -1,0 +1,195 @@
+:root {
+    --marhoon: #9B3B3B;
+    --blue: #51b3c0;
+    --black: #212121;
+    --ddarkblue: #0f0418;
+    --littlelight: #183561;
+    --darkblack: #010101;
+    --pink: #C3728D;
+    --purple: #6E2B97;
+    --darkblue: #101540;
+    --darkgreen: #376825;
+    --yellow: #ffffff;
+    --lowblack: #91fc82;
+    --lightgreen: #d6c634;
+
+
+
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh;
+    background: linear-gradient(to right,#5f2c82,#49a09d);
+}
+    
+
+
+header {
+    padding: 3rem 7rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--blue);
+    margin-bottom: 0.5rem;
+
+}
+
+input,
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#for-adding-new-to-do {
+    display: flex;
+
+
+}
+
+#new-to-do {
+    flex: 1 1 0%;
+    background-image: linear-gradient(to right, #1c3241, var(--littlelight));
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    color: var(--lightgreen);
+    font-size: 1.56rem;
+    position:relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+
+#add-to-do {
+    font-size: 1.56rem;
+    font-weight: 900;
+    background-image: linear-gradient(to right, #41295a, #2f0743);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#add-to-do:hover {
+    opacity: 1;
+
+}
+
+#add-to-do:active {
+    opacity: 0.2;
+}
+
+main {
+    flex: 1 1 0%;
+    padding: 2rem 7rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.to-do-list {
+    padding: 1rem;
+}
+
+.to-do-list {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--blue);
+    margin-bottom: 0.5rem;
+
+}
+
+#lists .list{
+    display: flex;
+    justify-content: space-between;
+
+    background-image: linear-gradient(to right, #361057 ,#215466);
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+#lists .list .content{
+    flex:1 1 0%;
+}
+#lists .list .content .text {
+    color: var(--yellow);
+    font-size: 1.2rem;
+    width: 100%;
+    weight: 800;
+    display:block;
+    transition: 0.2s;
+}
+
+#lists .list .content .text:not(:read-only) {
+    color: var(--lowblack);
+}
+
+#lists .list .action {
+    display: flex;
+    margin: 0 -1rem;
+}
+
+.list .action button {
+    cursor: pointer;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.list .action button:hover {
+    opacity: 1;
+
+}
+
+.list .action button:active {
+    opacity: 0.2;
+}
+
+.list .action .edit {
+    background-image: linear-gradient(to right, var(--purple), var(--pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.list .action .done {
+    color: #bb0505;
+}
+.list .action .remove{
+    color:#bb0505;
+}
+.filters{
+    display: flex;
+    justify-content :space-between;
+    padding: 1rem 0px;
+    color: #457A47;
+}
+.filters span{
+    margin: 0 8px;
+    font-size:1.3rem;
+    cursor:pointer;
+}
+.filters span.active{
+    color:#966f03
+}
